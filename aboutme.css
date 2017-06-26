@@ -5,9 +5,18 @@
 .center {
     text-align: center
 }
+h1 {
+    font-size: 300%
+}
+h2 {
+    font-size: 200%
+}
+h3 {
+    font-size: 150%
+}
 </style>
 </head>
-<body>
+<body style="background-color:black;">
 
 <div class="center">
 <h1 style="color:white;"><center>WaiYing Lam</center></h1>
@@ -15,6 +24,3 @@
 <img src="https://shop.lego.com/static/images/svg/lego-logo.svg" style="width:180px;height:130px;">
 <img src="https://static.tumblr.com/3caf08948d0402cc7eb35139c04bacca/vskn1ie/6abo4vap0/tumblr_static_tumblr_static__640.jpg" style="width:180px;height:130px;">
 </div>
-
-</body>
-</html>
