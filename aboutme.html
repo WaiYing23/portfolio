@@ -1,48 +1,56 @@
+<!DOCTYPE html>
 <html>
 <head>
+<link rel="stylesheet" type="text/css" href="portfolio/aboutme.css"/>
 <style>
 body {
-    background-color: #ffffe6;
+    background-color: black;
 }
 .center {
     text-align: center;
 }
-
 h1 {
-    color: black;
-    font-size: 200%;
+    color: white;
+    text-align: center;
+    font-size: 300%;
 }
-h2{
+h2 {
+    color: white;
+    text-align: center; 
+    font-size: 200%;
 }
 h3 {
-    color: black; 
-    font-size: 200%;
+    color: white;
+    text-align: center;
+    font-size: 150%;
 }
-h4 {
-    color: black; 
-    font-size: 200%;
+p {
+   color: white;
+   text-align: center; 
+   font-size: 120%;
 }
-
+p2{
+    color: white;
+}
 ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: ffff00;
+    background-color: #333;
 }
-
 li {
     float: left;
 }
 li a, .dropbtn {
     display: inline-block;
-    color: black;
+    color: white;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
 }
 li a:hover, .dropdown:hover .dropbtn {
-    background-color: #ffffb3;
+    background-color: deepskyblue;
 }
 li.dropdown {
     display: inline-block;
@@ -62,7 +70,7 @@ li.dropdown {
     display: block;
     text-align: left;
 }
-.dropdown-content a:hover {background-color: #ffff99}
+.dropdown-content a:hover {background-color: #00FFFF}
 .dropdown:hover .dropdown-content {
     display: block;
 }
@@ -71,24 +79,42 @@ li.dropdown {
 <head>
 <ul>
   <li><a href="#home">Home</a></li>
+  <li><a href="#news">About Me</a></li>
   <li class="dropdown">
-    <a href="javascript:void(0)" class="dropbtn">Facts</a>
+    <a href="javascript:void(0)" class="dropbtn">Project</a>
     <div class="dropdown-content">
-      <a href="#"></a>
-      <a href="#"></a>
-    </div>
-  <li class="dropdown">
-    <a href="javascript:void(0)" class="dropbtn">How To Help</a>
-    <div class="dropdown-content">
-      <a href="#"></a>
-      <a href="#"></a>
+      <a href="#">Obamicon</a>
+      <a href="#">Interactive Story</a>
     </div>
   </li>
 </ul>
-
-<h1>Intro:</h1>
-<h3>Facts:</h3>
-<h4>How To Help:</h4>
-
+<button onclick="myFunction()">Press Here</button>
+<p id="demo"></p>
+<div class="center">
+<h1>WaiYing Lam</h1>
+<img src="http://www.fbschool.org/_assets/images/basketball.jpg" style="width:180px;height:130px;">
+<img src="https://shop.lego.com/static/images/svg/lego-logo.svg" style="width:180px;height:130px;">
+<img src="https://static.tumblr.com/3caf08948d0402cc7eb35139c04bacca/vskn1ie/6abo4vap0/tumblr_static_tumblr_static__640.jpg" style="width:180px;height:130px;">
+</div>
+<h2>About Me</h2>
+<p>Birthplace: Hong Kong</p>
+<p>I'm a senior at John O'Connell High School. I'm on the school basketball team and badminton team. I'm also the manager of the volleyball team. I like to volunteer on the weekend.</p>
+<p>Fun Fact: Broken my left arm while going down the slides in kindergarten</p>
+  
+<h2>Portfolio</h2>
+<h3>Contact Infomation</h3>
+<p2>Email: stephanieLam1@yahoo.com</p2>
+<script>
+function myFunction() {
+    var txt;
+    var person = prompt("Please enter your name:");
+    if (person == null || person == "") {
+        txt = "User cancelled the prompt.";
+    } else {
+        txt = "Hello " + person + "! Please Enjoy and Have a Good Day!";
+    }
+    document.getElementById("demo").innerHTML = txt;
+}
+</script>
 </body>  
 </html>
